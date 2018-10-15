@@ -136,7 +136,7 @@ hr{
 /*==============Serviços======================*/
 .bg-servicos{
  /*  background: linear-gradient(131.26deg,#312b45 30%, #ff3859 100%) */
- background-color: #f2f0f;
+ background-color: #fff;
 }
 .underline{
   content: '';
@@ -303,9 +303,7 @@ a.social{
     font-size: 18px;
 }
 /* ======= Contato ======= */
-#contato{
- /* background: url(../img/bg-contato.png) no-repeat center center/cover;  */
-}
+
 .bt-redes-socias {
     padding: 10px 10px 10px 10px;
     color: #FFF;
