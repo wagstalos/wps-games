@@ -186,6 +186,7 @@ z-index: 2;
 }
 .btn-portfolio:hover{
   color: #adadad;
+  outline: none;
 }
 .btn-portfolio:active{
   outline: none;
@@ -193,7 +194,7 @@ z-index: 2;
 .active-btn-portfolio{
   background: linear-gradient(-45deg, rgba(78, 84, 200, .9), rgba(128, 137, 255, .9));
   color: #fff;
-  outline: none;
+  outline: none !important;
 }
 #jogos hr{
   background-color: #29547b;
