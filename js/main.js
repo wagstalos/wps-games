@@ -36,42 +36,38 @@ if ('IntersectionObserver' in window) {
 
 
      $( "#btn-sites" ).click(function() {
-        $( "#portfolio-jogos" ).fadeOut( "fast", function() {
+          $( "#portfolio-jogos" ).fadeOut( "fast", function() {
             // Animation complete
-            $( "#portfolio-sites" ).addClass( "bounceInLeft" );
-            $( "#portfolio-jogos" ).removeClass( "bounceInLeft" );
+          $("#btn-sites").addClass( "active-btn-portfolio" );
+          $("#btn-jogos").removeClass( "active-btn-portfolio" );
+          $( "#portfolio-sites" ).addClass( "bounceInLeft" );
+          $( "#portfolio-jogos" ).removeClass( "bounceInLeft" );
         }); 
-         $( "#texto-jogos" ).fadeOut( "fast", function() {
-            // Animation complete
-            $( "#texto-sites" ).addClass( "slideInUp" );
-        });  
+    
         $( "#portfolio-sites" ).fadeIn( "fast", function() {
             // Animation complete
         }); 
-         $( "#texto-sites" ).fadeIn( "fast", function() {
-            // Animation complete
-        });  
+
     });
 
      $( "#btn-jogos" ).click(function() {
         $( "#portfolio-sites").fadeOut( "fast", function() {
             // Animation complete
+            $("#btn-jogos").addClass( "active-btn-portfolio" );
+            $("#btn-sites").removeClass( "active-btn-portfolio" );
             $( "#portfolio-jogos").addClass( "bounceInLeft" );
             $( "#portfolio-sites" ).removeClass( "bounceInLeft" );
         }); 
-          $( "#texto-sites").fadeOut( "fast", function() {
-            // Animation complete
-            $( "#texto-jogos" ).addClass( "slideInUp" );
-        }); 
-
+ 
         $( "#portfolio-jogos" ).fadeIn( "fast", function() {
           // Animation complete
         });
-          $("#texto-jogos" ).fadeIn( "fast", function() {
-          // Animation complete
-        });  
+
     });
 
+    $( "#btn-jogos" ).click(function() {
+        
+     });
 		 // //niceScroll
    //    var nice = $("html").niceScroll({
    //    	cursorcolor: "#00ff8c",
@@ -85,7 +81,6 @@ if ('IntersectionObserver' in window) {
    //    	cursorborderradius: "15px",
    //    	// cursordragontouch: true,
    //    }); // The document page (body)
-
 
     // sticky plugin
     $(".sticky-header").sticky({ topSpacing: 0});

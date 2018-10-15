@@ -164,9 +164,9 @@ z-index: 2;
 
 /* ======jogos====== */
 .btn-portfolio{
-  color: #fff;
-  background-color: transparent;
-  display: inline-block;
+    color: #fff;
+    background-color: transparent;
+    display: inline-block;
     font-weight: 400;
     text-align: center;
     white-space: nowrap;
@@ -175,50 +175,37 @@ z-index: 2;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    border: 1px solid #00ff8c;
+    /* border: 1px solid #00ff8c; */
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
     border-radius: .25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     cursor: pointer;
+    border: none;
 }
 .btn-portfolio:hover{
   color: #adadad;
 }
-.btn-portfolio:focus{
-  background-color: rgba(255,255,255,0.2);
-  color: #00ff8c;
+.btn-portfolio:active{
+  outline: none;
 }
-
+.active-btn-portfolio{
+  background: linear-gradient(-45deg, rgba(78, 84, 200, .9), rgba(128, 137, 255, .9));
+  color: #fff;
+  outline: none;
+}
+#jogos hr{
+  background-color: #29547b;
+}
 .bg-jogos{
   /*background-color: #112B43;*/
   background: linear-gradient(180.26deg,#112B43 57%, #2e3f71 100%); 
   /* background: url(../img/bg-projetos.jpg) no-repeat center center/cover; */
 }
-
-#demos .owl-carousel .item {
-    height: 10rem;
-    background: #4DC7A0;
-    padding: 1rem;
-}
-.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
-    color: #00ff8c;
-    font-size: 61px;
-}
 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot:focus {
     outline: none;
-    outline: none;
-    border: 1px solid;
     margin-bottom: 8px;
-    width: 49px;
-    height: 54px;
-}
-.owl-theme .owl-nav [class*=owl-]:hover {
-     background: rgba(255,255,255,0); 
-}
-.owl-theme .owl-dots .owl-dot span {
-    background: #00ff8c;
 }
 .btn-wps {
     width: 100%; 
@@ -238,12 +225,9 @@ z-index: 2;
     cursor: pointer;
 }
 .btn-wps:hover {
-    background: #00ff8c;
-    color: #545fbd;
-    box-shadow: 0px 10px 20px 0px rgba(60, 64, 143, 0.2);
-}
-#jogos h2{
-  color: #fff;
+  background: linear-gradient(-45deg, rgba(78, 84, 200, .9), rgba(128, 137, 255, .9));
+    color: #fff;
+    /* box-shadow: 0px 10px 20px 0px rgba(60, 64, 143, 0.2); */
 }
 .card{
   background-color: #142652!important;
@@ -262,7 +246,7 @@ z-index: 2;
   background-color: #fff;
 }
 #quem-somos h2, h4{
-  color: #2b3d6d;
+  color: #7c89e4;
 }
 #quem-somos h5{
  /*  color: white; */
