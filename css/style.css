@@ -10,13 +10,16 @@ body {
 hr{
   width: 80%
 }
+
 .banner {
     background: url(../img/banner.jpg) no-repeat center center/cover;
 }
 .banner-area {
     background: url(../img/banner-foquete.png) no-repeat center center/cover;
 }
-
+a.text-light:focus, a.text-light:hover {
+  color: #00ff8c!important;
+}
 /*nicescroll*/
 .get-nicer {
     overflow: auto;
