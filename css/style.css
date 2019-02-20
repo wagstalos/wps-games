@@ -110,17 +110,25 @@ a.text-light:focus, a.text-light:hover {
     border: 1px solid #00ff8c;
     color: #222222;
     display: inline-block;
-    font-weight: 600;
-    -webkit-transition: all 0.3s ease 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
+    font-weight: 500;
+    background-image: -webkit-linear-gradient(30deg, #5965b1 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #5965b1 50%, transparent 50%);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
     cursor: pointer;
+    background-color: #00ff8c;
 }
 .primary-btn:hover {
-    background: #00ff8c;
+    /* background: #00ff8c;
     color: #fff;
-    box-shadow: 0px 10px 20px 0px rgba(60, 64, 143, 0.2);
+    box-shadow: 0px 10px 20px 0px rgba(60, 64, 143, 0.2); */
+    transition: 1s;
+    color:#5965b1!important;
+    text-decoration: none;
+    background-position: 100%;
 }
 .primary-btn.banner-btn {
     color: #fff;
@@ -167,37 +175,31 @@ z-index: 2;
 
 /* ======jogos====== */
 .btn-portfolio{
-    color: #fff;
-    background-color: transparent;
-    display: inline-block;
-    font-weight: 400;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    /* border: 1px solid #00ff8c; */
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: .25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    cursor: pointer;
-    border: none;
+  color:#fff;
+  border: 1px solid #00ff8c;
+  background-image: -webkit-linear-gradient(30deg, #112b43 50%, transparent 50%);
+  background-image: linear-gradient(30deg, #112b43 50%, transparent 50%);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+  padding: 5px 35px 5px 35px;
+  border-radius: 100px;
+  background-color: #00ff8c;
 }
 .btn-portfolio:hover{
-  color: #adadad;
-  outline: none;
+  background-position: 100%;
+  transition: 1s;
+  color: #112b43;
 }
 .btn-portfolio:active{
   outline: none;
 }
 .active-btn-portfolio{
-  background: linear-gradient(-45deg, rgba(78, 84, 200, .9), rgba(128, 137, 255, .9));
-  color: #fff;
-  outline: none !important;
+  color: #00ff8c;
+  outline: none;
+  text-decoration: none;
 }
 #jogos hr{
   background-color: #29547b;
@@ -212,26 +214,23 @@ z-index: 2;
     margin-bottom: 8px;
 }
 .btn-wps {
-    width: 100%; 
-    line-height: 41px;
-    padding: 0px 40px;
-    position: relative;
-    /* border-radius: 20px; */
-    background: rgb(32, 53, 91);
-    border: 1px solid #21365c;
-    color: #00ff8c;
-    display: inline-block;
-    font-weight: 600;
-    -webkit-transition: all 0.3s ease 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
+  color: #fff;
+  border: 1px solid #00ff8c;
+  background-image: -webkit-linear-gradient(30deg, #142652 50%, transparent 50%);
+  background-image: linear-gradient(30deg, #142652 50%, transparent 50%);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+  background-color:#00ff8c;
+  border-radius: 100px;
+  width: 100%;
+  padding: 10px 0 10px 0;
 }
 .btn-wps:hover {
-  background: linear-gradient(-45deg, rgba(78, 84, 200, .9), rgba(128, 137, 255, .9));
-    color: #fff;
-    /* box-shadow: 0px 10px 20px 0px rgba(60, 64, 143, 0.2); */
+  background-position: 100%;
+  color: #142652;
 }
 .card{
   background-color: #142652!important;
@@ -313,7 +312,7 @@ a.social{
     color: #FFF;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    border-radius: 5px;
+    border-radius: 100px;
     border: none;
     cursor: pointer;
     font-size: 0.8rem;
@@ -414,3 +413,4 @@ a.social{
    background-color: rgba(80, 92, 182 , 0.9);
 }
 }
+
