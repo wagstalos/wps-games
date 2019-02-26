@@ -1,7 +1,7 @@
 body {
     color: #45444f;
     font-family: "Poppins", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.5em;
     position: relative;
@@ -10,7 +10,13 @@ body {
 hr{
   width: 80%
 }
-
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #00ffa5!important;
+}
+.owl-theme .owl-dots .owl-dot span {
+  background: transparent!important;
+  border: 1px solid #00ff8c;
+}
 .banner {
     background: url(../img/banner.jpg) no-repeat center center/cover;
 }
@@ -32,6 +38,7 @@ a.text-light:focus, a.text-light:hover {
     border: none !important;
     background-color: #00ff8c !important;
 }
+
 /*escrever texto*/
 .hidden {
   opacity:0;
@@ -122,9 +129,6 @@ a.text-light:focus, a.text-light:hover {
     background-color: #00ff8c;
 }
 .primary-btn:hover {
-    /* background: #00ff8c;
-    color: #fff;
-    box-shadow: 0px 10px 20px 0px rgba(60, 64, 143, 0.2); */
     transition: 1s;
     color:#5965b1!important;
     text-decoration: none;
@@ -142,7 +146,6 @@ a.text-light:focus, a.text-light:hover {
 }
 .icones{
   font-size: 18px;
-  /*color: #00ff8c!important;*/
 }
 /*==============Serviços======================*/
 .bg-servicos{
@@ -159,6 +162,10 @@ a.text-light:focus, a.text-light:hover {
 }
 #servicos h2{
   color: #7c89e4;
+}
+#servicos h5{
+  color: #23292e;
+  font-weight: 300;
 }
 #fundo-vaca{
 position: absolute;
@@ -187,6 +194,7 @@ z-index: 2;
   padding: 5px 35px 5px 35px;
   border-radius: 100px;
   background-color: #00ff8c;
+  cursor: pointer;
 }
 .btn-portfolio:hover{
   background-position: 100%;
@@ -238,7 +246,7 @@ z-index: 2;
 .title-white{
   color: #fff;
 }
-/* =======Quem somos */
+/* =======Quem somos ==============*/
 #quem-somos{
   background: url(../img/faixa.png) no-repeat center center/cover;
 /*    position: absolute; */
@@ -281,22 +289,26 @@ z-index: 2;
   background-color: #142652;
 }
 a.icone-social{
-    color: #949393;
+  color: #5eefbb;
 }
 a.icone-social:hover{
-  color: #00ff8c;
+  color: #2a3c6a;
   -webkit-transition: all 0.5s ease 0s;
   -moz-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
+  text-decoration: none;
+  /* border: 1px solid #00ff8c; */
+  background-color: #fff;
+  transition: 1s;
 }
 a.social{
-    padding: 13px;
-    background-color: #f3efef;
-    border-radius: 4px;
-    margin: 10px 10px 10px 10px;
-    font-size: 18px;
-    border-bottom: 3px solid #5eefbb;
+  padding: 10px;
+  background-color: #293962;
+  border-radius: 129px;
+  margin: 10px 10px 10px 10px;
+  font-size: 18px;
+  /* border: 1px solid #4f5e84; */
 }
 .border-contato{
     padding: 13px;
@@ -322,6 +334,9 @@ a.social{
   width: 140px;
   background-color: #08c;
 }
+.bt-verde {
+  background-color: #46C14F;
+}
 #contato button a{
   color: white;
 }
@@ -329,10 +344,7 @@ a.social{
   text-decoration: none;
   color: white;
 }
-.bt-verde {
-    background-color: #46C14F;
 
-}
 #contato h2 {
   color: #7c89e4;
 }
@@ -340,7 +352,6 @@ a.social{
   margin: 0px 10px 0px 10px;
   color: #949393;
 }
-
 .mouse {
     position: absolute;
     width: 18px;
@@ -358,10 +369,11 @@ a.social{
     width: 3px;
     height: 3px;
     margin: 16px auto;
-    border-radius: 4px;
+    border-radius: 10px;
     background: #fff;
     -webkit-animation: finger 1s infinite;
     animation: finger 2s infinite;
+    margin-top: 19px;
 }
 .btn-floating {
     display: inline-block;
@@ -402,15 +414,32 @@ a.social{
   width: 175px;
   height: 150px;
 }
+/*======media=========*/
 @media only screen and (max-width: 750px) {
-.icones-animados{
-  width: 100px;
+  .icones-animados{
+      width: 100px;
+    }
+  .ml-20{
+      margin-left: 0;
+  }
+  .default-header {
+      background-color: rgba(80, 92, 182 , 0.9);
+  }
+  a.social {
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+    margin: 10px 10px 10px 10px;
+    /* font-size: 18px; */
+    /* border: 1px solid #4f5e84; */
+  }
+  .mouse{
+    display: none;
+  }
 }
-.ml-20{
-  margin-left: 0;
+/*======Flex=========*/
+.flex {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
-.default-header {
-   background-color: rgba(80, 92, 182 , 0.9);
-}
-}
-
